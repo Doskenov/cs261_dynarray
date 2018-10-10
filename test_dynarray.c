@@ -1,10 +1,13 @@
 #include <stdio.h>
+#include <assert.h>
 
 #include "dynarray.h"
 
 #define NUM_TEST_ELEMENTS 32
 
 int main(int argc, char** argv) {
+
+  // assert(1);
 
   struct dynarray* da = dynarray_create();
 
