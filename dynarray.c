@@ -12,7 +12,7 @@ struct dynarray {
   int capacity;
 };
 
-struct dynarray* dynarray_create( {
+struct dynarray* dynarray_create() {
 
   struct dynarray* da = malloc(sizeof(struct dynarray));
   assert(da);
@@ -85,7 +85,7 @@ void dynarray_insert(struct dynarray* da, int idx, int val) {
 
   // Let users specify idx = -1 to indicate the end of the array.
   if (idx == -1) {
-    idx = da->size - 1;
+    idx = da->size;
   }
 
 }
